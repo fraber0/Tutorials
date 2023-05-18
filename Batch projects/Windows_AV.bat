@@ -16,16 +16,16 @@ echo What would you like to do?
 echo.
 set /p where=
 echo.
-if %where% equ scan goto :scan
-if %where% equ info goto :info
-if %where% equ commands goto :commands
-if %where% equ changesettings goto :changesettings
-if %where% equ exit goto :exit
-if %where% not equ scan goto :error
-if %where% not equ info goto :error
-if %where% not equ commands goto :error
-if %where% not equ changesettings goto :error
-if %where% not equ exit goto :error
+if %where% == scan goto :scan
+if %where% == info goto :info
+if %where% == commands goto :commands
+if %where% == changesettings goto :changesettings
+if %where% == exit goto :exit
+if not %where% == scan goto :error
+if not %where% == info goto :error
+if not %where% == commands goto :error
+if not %where% == changesettings goto :error
+if not %where% == exit goto :error
 cd C:\Windows\system32
 
 :scan
