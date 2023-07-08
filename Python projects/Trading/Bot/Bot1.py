@@ -163,7 +163,7 @@ class BinanceTrader:
             else:
                 print('Invalid choice, please try again.')
 
-from ema_strategy import ema_trading
+from EMA_Trading import ema_trading
 
 trader = BinanceTrader()
 trader.add_strategy('EMA trading', ema_trading)
