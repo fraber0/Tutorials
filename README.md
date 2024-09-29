@@ -1,2 +1,2 @@
-# Parreglias_playground
-Parreglia's playground
+# Web Dev Tutorial
+Web Dev Tutorial
